@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+    <Authors>Jamesthe1</Authors>
+    <Version>0.0.2</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\james\.nuget\packages\sharpfont\4.0.0\build\..\config\SharpFont.dll.config" />
+    <Content Remove="C:\Users\james\.nuget\packages\sharpfont\4.0.1\build\..\config\SharpFont.dll.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Utils.fs" />
+    <Compile Include="InputMgr.fs" />
+    <Compile Include="FontMgr.fs" />
+    <Compile Include="Elements.fs" />
+    <Compile Include="TextureMgr.fs" />
+    <Compile Include="WindowMgr.fs" />
+    <Compile Include="ShaderMgr.fs" />
+    <Compile Include="RuntimeMgr.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LunarLabs.Fonts" Version="1.0.1" />
+    <PackageReference Include="OpenTK" Version="4.7.2" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.1" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>
